@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/chatgpt_image_sep_5__2026__12_08_16_pm"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart Shopping, Better Living"
+                    android:textColor="#7B8196"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/helpIcon"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_preferences"
+                android:contentDescription="Settings"
+                />
+
+        </LinearLayout>
+        <!-- PROFILE STATS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_color"
+            android:backgroundTint="#FFA500"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:background="#FFFFFF"
+                android:contentDescription="Profile Image"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_myplaces" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Phone Number"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+                <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Email Address"
+                android:textColor="#E5DFFF"
+                android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginTop="18dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📦"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="My Orders"
+                    android:textColor="#292347"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderCountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="0"
+                    android:textColor="#5637B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="#E6E4EF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💳"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Coupons"
+                    android:textColor="#292347"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="#E6E4EF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/watchList"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♥️"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="My Watchlist"
+                    android:textColor="#292347"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/watchListCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="0"
+                    android:textColor="#5637B5"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ADMIN ORDERS BUTTON -->
+        <Button
+            android:id="@+id/adminOrdersButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="🛠    Admin Order Management    ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <!-- SELLER PANEL BUTTON -->
+        <Button
+            android:id="@+id/openSellerPanelButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="🏪    Open Seller Panel    ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/myOrdersButton"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="▣    Order History                      ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/shippingDetailsButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="📦    Shipping                              ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="💰    My Payments                     ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+        <!-- MENU TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp"
+            android:text="Account Settings"
+            android:textColor="#30265B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- EDIT PROFILE -->
+
+        <Button
+            android:id="@+id/menuEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="✎    Edit Profile                         ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+
+        <!-- MY ORDERS -->
+
+
+        <!-- COUPONS -->
+
+        <Button
+            android:id="@+id/allCouponsButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="🎟    All Coupons                       ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+
+        <!-- CHANGE PASSWORD -->
+
+        <Button
+            android:id="@+id/ratingReviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="🔒    My Rating and Reviews               ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+
+
+        <Button
+            android:id="@+id/settingButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="↪     Settings                             ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/policyButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="💸    Return and Refund Policy       ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="↪    About Valmaro                              ›"
+            android:textAllCaps="false"
+            android:textColor="#30265B"
+            android:textSize="16sp" />
+
+
+        <!-- LOGOUT -->
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="↪    Log Out                              ›"
+            android:textAllCaps="false"
+            android:textColor="#D32F2F"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:text="🎟"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seller Panel"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFA500" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Add a new product to Valmaro"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <!-- PRODUCT IMAGE -->
+
+        <ImageView
+            android:id="@+id/productImagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="#EEEEEE"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Product image preview" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FFA500"
+            android:text="SELECT PRODUCT IMAGE" />
+
+        <!-- PRODUCT NAME -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/productNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter product name"
+            android:background="@drawable/button_edit"
+            android:inputType="textCapSentences"
+            android:padding="12dp" />
+
+        <!-- PRICE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Price (₹)"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/productPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter product price"
+            android:background="@drawable/button_edit"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <!-- DISCOUNT PRICE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Discount Price (₹)"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/productDiscountPriceInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter discount price"
+            android:background="@drawable/button_edit"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <!-- DISCOUNT PERCENTAGE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Discount Percentage"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/productDiscountPercentPreview"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_edit"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Discount: 0%"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#E53935" />
+
+        <!-- CATEGORY -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <!-- STOCK -->
+
+        <Spinner
+            android:id="@+id/productCategorySpinner"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_edit"
+            android:layout_height="55dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Stock Quantity"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <!-- DESCRIPTION -->
+
+        <EditText
+            android:id="@+id/productStockInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button_edit"
+            android:hint="Enter available quantity"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Product Description"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/productDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:background="@drawable/button_edit"
+            android:hint="Describe your product"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="12dp" />
+
+        <!-- UPLOAD BUTTON -->
+
+        <Button
+            android:id="@+id/uploadProductButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="22dp"
+            android:text="UPLOAD PRODUCT"
+            android:backgroundTint="#FFA500"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

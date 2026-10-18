@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:padding="18dp"
+    android:background="@drawable/order_card_bg">
+
+    <!-- ORDER ID AND DATE -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order ID: VM123456"
+            android:textSize="12sp"
+            android:textColor="#777777" />
+
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Ordered on: 25 Sep 2026"
+            android:textSize="12sp"
+            android:textColor="#777777" />
+
+    </LinearLayout>
+
+    <!-- DIVIDER -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EEEEEE" />
+
+    <!-- PRODUCT NAME -->
+
+    <TextView
+        android:id="@+id/orderProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Premium Running Shoes"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#171717" />
+
+    <!-- PRICE AND QUANTITY -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/orderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: ₹1499"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/orderQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Quantity: 1"
+            android:textSize="14sp"
+            android:textColor="#777777" />
+
+    </LinearLayout>
+
+    <!-- STATUS -->
+
+    <TextView
+        android:id="@+id/orderStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/order_status_bg"
+        android:text="Status: Confirmed"
+        android:textColor="#238636"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <!-- DELIVERY DATE -->
+
+    <TextView
+        android:id="@+id/orderDeliveryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Expected Delivery: 30 Sep 2026"
+        android:textSize="13sp"
+        android:textColor="#555555" />
+
+    <!-- DIVIDER -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        android:background="#EEEEEE" />
+
+    <!-- CUSTOMER DETAILS -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Details"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#171717" />
+
+    <TextView
+        android:id="@+id/orderCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Customer: Ankit"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+    <TextView
+        android:id="@+id/orderPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Phone: 9876543210"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+    <TextView
+        android:id="@+id/orderAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Address: Your delivery address"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:lineSpacingExtra="3dp" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "292147305497",
+    "project_id": "valmaro-2026",
+    "storage_bucket": "valmaro-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292147305497:android:44fc022ebd1f91e5089e88",
+        "android_client_info": {
+          "package_name": "com.example.valmaro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLpMUt7RwewemLicqMCibfkwJjuqr927k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

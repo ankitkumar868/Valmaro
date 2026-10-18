@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VALMARO"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFA500"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Your Account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="35dp"
+            android:textColor="#FFA500"
+            />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_color"/>
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bg_color"/>
+
+        <Button
+            android:id="@+id/sendOtpButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SEND OTP"
+            android:textSize="16sp"
+            android:backgroundTint="#FFA500"/>
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign In"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:textColor="#FFA500"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

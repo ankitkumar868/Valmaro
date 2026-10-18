@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F7FB"
+    android:padding="16dp">
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Watchlist"
+            android:textColor="#FFA500"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <!-- WATCHLIST COUNT -->
+
+    <TextView
+        android:id="@+id/watchlistCountText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="0 Products"
+        android:textColor="#777777"
+        android:textSize="14sp" />
+
+    <!-- PRODUCT LIST -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/watchlistRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp" />
+
+    <!-- EMPTY MESSAGE -->
+
+    <TextView
+        android:id="@+id/emptyWatchlistText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="❤️\n\nYour Watchlist is empty\n\nAdd your favorite products here!"
+        android:textColor="#777777"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>
